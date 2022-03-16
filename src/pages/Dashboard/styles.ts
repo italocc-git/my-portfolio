@@ -1,10 +1,9 @@
 import styled from 'styled-components'
-import { Carousel } from 'antd';
 
 export const Header = styled.div`
     width:100%;
     height: 50px;
-    background-color:rgba(0,0,0,0.55);
+    background-color:rgba(0,0,0,0.75);
     position:fixed;
     left:0;
     top:0;
@@ -84,8 +83,8 @@ export const SocialMedia = styled.ul`
 
     a{
         img{
-            width:28px;
-            height:28px;
+            width:30px;
+            height:30px;
 
         }
         text-decoration:none;
@@ -119,67 +118,3 @@ export const AboutMe = styled.div`
 
 `
 
-export const MyProjects = styled.div`
-     h1{
-        font-size: 3.5rem;
-        
-        text-align:center;
-        color:#fff;
-    } 
-
-`
-
-export const CarroselAntd = styled(Carousel)`
-    padding: 0 50px;
-    height: 750px;
-    
-`
-export const MyProjectItem = styled.div`
-        height: 100%;
-        background: #364d72;
-        padding:0 15px;
-    .contentLayout {
-        display: flex;
-        align-items:center;
-        justify-content:center;
-    }
-    img{
-        height: 450px;
-        margin-bottom:1rem;
-    }
-`
-
-export const MyProjectTitle = styled.h1`
-        text-align:center;
-        color:#FFF;
-        font-size:2rem;
-        font-weight:600;
-`
-
-export const MyProjectSubtitle = styled.h3`
-            font-size:1.2rem;
-            font-weight:600;
-            color:#FFF;
-        
-`
-export const MyProjectContent = styled.p`
-            font-size:1rem;
-            color: #fff;
-            display:flex ;
-            justify-content: space-around;
-`
-
-export const MyProjectExternalButton = styled.a`
-            display: flex ;
-            align-items : center;
-            justify-content: center;
-            gap:1rem;
-            width:230px;
-            height: 50px ;
-            background: black;
-            border-radius:10px;
-            svg{
-                width:28px;
-                height:28px ;
-            }
-`

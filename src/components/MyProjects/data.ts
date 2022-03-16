@@ -1,5 +1,5 @@
 import {MyProjectsListProps} from './types'
-import dashGifImage from '../../assets/gif/gif-admin-dashboard.gif'
+import dashGifImage from '../../assets/gif/admin-dash.gif'
 export const data : MyProjectsListProps[] = [
     
     {

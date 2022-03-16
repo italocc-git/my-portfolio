@@ -5,20 +5,13 @@ import {
     MainContent,
     SocialMedia,
     AboutMe,
-    MyProjects,
-    CarroselAntd,
-    MyProjectItem,
-    MyProjectTitle,
-    MyProjectSubtitle,
-    MyProjectContent,
-    MyProjectExternalButton
 } from './styles'
 import Github from '../../assets/github.svg'
 import Gmail from '../../assets/gmail.svg'
 import Instagram from '../../assets/instagram.svg'
-import {data} from '../../components/MyProjects/data'
-import {GithubOutlined , ArrowRightOutlined } from '@ant-design/icons'
-import { Tag } from 'antd';
+import Whatsapp from '../../assets/whatsapp.svg'
+import { MyProjects } from '../../components/MyProjects'
+
 export function Dashboard(){
 
     return(
@@ -50,6 +43,9 @@ export function Dashboard(){
                         <a href="https://www.instagram.com/italoccavalcante/">
                             <img src={Instagram} alt='Instagram'/> 
                         </a>
+                        <a href="https://wa.me/5588999075544">
+                            <img src={Whatsapp} alt='Whatsapp'/> 
+                        </a>
                     </SocialMedia>
                 </MainContent>
                 
@@ -65,51 +61,8 @@ export function Dashboard(){
           meus projetos pessoais . 
         </p>
         </AboutMe>
-        <MyProjects>
-            <h1 id='myProjects'>Meus Projetos</h1>
-            <CarroselAntd arrows={true}  
-            
-            >
-                {data.map(item => (
-                    <MyProjectItem>
-                        <MyProjectTitle>{item.title}</MyProjectTitle>
-                        <MyProjectSubtitle>Sobre :</MyProjectSubtitle>
-                        <MyProjectContent >
-                            {item.about}
-                        <MyProjectExternalButton href={item.linkGithub}>
-                            Acessar Repositório
-                            <GithubOutlined />
-                        </MyProjectExternalButton>
-                        {item.linkPublicate && (
-                           <MyProjectExternalButton href={item.linkPublicate}>
-                           Acessar WebSite 
-                           <ArrowRightOutlined />
-                       </MyProjectExternalButton> 
-                        )}
-                        </MyProjectContent>
-                        
-                        
-                        <div className='contentLayout'>
-                        <div>
-                            {item.demonstration && (
-                                <img  src={item.demonstration} alt={item.title} />
-                            )}
-                        </div>
-                            <div>
-                                <MyProjectSubtitle>Bibliotecas utilizadas : </MyProjectSubtitle>
-                                {item.technologies.map((techItem, index) => 
-                                <Tag style={{margin:'5px 10px'}} color={index % 2 ? 'green' : 'cyan'}>{techItem}</Tag>
-                            )}
-                                
-                            </div>
-                        </div>
-                        
-         
-                    </MyProjectItem>
-                    
-                ))}
-            </CarroselAntd>
-        </MyProjects>
+        <MyProjects/>
+        
     </>
     )
 }
