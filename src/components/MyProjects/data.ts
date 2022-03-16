@@ -1,4 +1,5 @@
 import {MyProjectsListProps} from './types'
+import dashGifImage from '../../assets/gif/gif-admin-dashboard.gif'
 export const data : MyProjectsListProps[] = [
     
     {
@@ -15,7 +16,8 @@ export const data : MyProjectsListProps[] = [
         about : 'Projeto simples de listagem e CRUD de usuários , onde utilizei o contexto de estado Redux para prática',
         technologies: ['Typescript','React', 'AntdDesign','Axios','React Redux','Redux-Saga','Styled Components','React-dom'],
         linkGithub:'https://github.com/italocc-git/admin-dashboard',
-        demonstration:'https://im5.ezgif.com/tmp/ezgif-5-08b47bbc1d.gif',
+        demonstration:dashGifImage,
+        linkPublicate: 'https://sharp-sinoussi-775e59.netlify.app/'
         
     },
     {

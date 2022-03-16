@@ -1,9 +1,23 @@
-import {Header , HeaderContainer , Main , MainContent, SocialMedia, AboutMe, MyProjects, CarroselAntd} from './styles'
+import {
+    Header ,
+    HeaderContainer ,
+    Main ,
+    MainContent,
+    SocialMedia,
+    AboutMe,
+    MyProjects,
+    CarroselAntd,
+    MyProjectItem,
+    MyProjectTitle,
+    MyProjectSubtitle,
+    MyProjectContent,
+    MyProjectExternalButton
+} from './styles'
 import Github from '../../assets/github.svg'
 import Gmail from '../../assets/gmail.svg'
 import Instagram from '../../assets/instagram.svg'
 import {data} from '../../components/MyProjects/data'
-import {GithubOutlined} from '@ant-design/icons'
+import {GithubOutlined , ArrowRightOutlined } from '@ant-design/icons'
 import { Tag } from 'antd';
 export function Dashboard(){
 
@@ -57,16 +71,22 @@ export function Dashboard(){
             
             >
                 {data.map(item => (
-                    <div>
-                        <h1>{item.title}</h1>
-                        <h3>Sobre :</h3>
-                        <p >
+                    <MyProjectItem>
+                        <MyProjectTitle>{item.title}</MyProjectTitle>
+                        <MyProjectSubtitle>Sobre :</MyProjectSubtitle>
+                        <MyProjectContent >
                             {item.about}
-                        <a href={item.linkGithub}>
+                        <MyProjectExternalButton href={item.linkGithub}>
                             Acessar Repositório
                             <GithubOutlined />
-                        </a>
-                        </p>
+                        </MyProjectExternalButton>
+                        {item.linkPublicate && (
+                           <MyProjectExternalButton href={item.linkPublicate}>
+                           Acessar WebSite 
+                           <ArrowRightOutlined />
+                       </MyProjectExternalButton> 
+                        )}
+                        </MyProjectContent>
                         
                         
                         <div className='contentLayout'>
@@ -76,7 +96,7 @@ export function Dashboard(){
                             )}
                         </div>
                             <div>
-                                <h3>Bibliotecas utilizadas : </h3>
+                                <MyProjectSubtitle>Bibliotecas utilizadas : </MyProjectSubtitle>
                                 {item.technologies.map((techItem, index) => 
                                 <Tag style={{margin:'5px 10px'}} color={index % 2 ? 'green' : 'cyan'}>{techItem}</Tag>
                             )}
@@ -85,7 +105,7 @@ export function Dashboard(){
                         </div>
                         
          
-                    </div>
+                    </MyProjectItem>
                     
                 ))}
             </CarroselAntd>

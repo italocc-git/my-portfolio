@@ -133,31 +133,43 @@ export const CarroselAntd = styled(Carousel)`
     padding: 0 50px;
     height: 750px;
     
-    div {
-        
+`
+export const MyProjectItem = styled.div`
         height: 100%;
         background: #364d72;
         padding:0 15px;
+    .contentLayout {
+        display: flex;
+        align-items:center;
+        justify-content:center;
+    }
+    img{
+        height: 450px;
+        margin-bottom:1rem;
+    }
+`
 
-        h1{
-            text-align:center;
-            color:#FFF;
-            font-size:2rem;
-            font-weight:600;
-            
-        }
-        h3 {
+export const MyProjectTitle = styled.h1`
+        text-align:center;
+        color:#FFF;
+        font-size:2rem;
+        font-weight:600;
+`
+
+export const MyProjectSubtitle = styled.h3`
             font-size:1.2rem;
             font-weight:600;
             color:#FFF;
-        }
-        p{
+        
+`
+export const MyProjectContent = styled.p`
             font-size:1rem;
             color: #fff;
             display:flex ;
-            justify-content: space-between;
-        }
-        a{
+            justify-content: space-around;
+`
+
+export const MyProjectExternalButton = styled.a`
             display: flex ;
             align-items : center;
             justify-content: center;
@@ -170,16 +182,4 @@ export const CarroselAntd = styled(Carousel)`
                 width:28px;
                 height:28px ;
             }
-        }
-    }
-    img{
-        height: 450px;
-        margin-bottom:1rem;
-    }
-    .contentLayout {
-        display: flex;
-        align-items:center;
-        justify-content:center;
-    }
-
 `

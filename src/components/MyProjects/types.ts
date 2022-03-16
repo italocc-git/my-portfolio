@@ -4,5 +4,6 @@ export interface MyProjectsListProps {
         technologies: string[];
         demonstration?: string;
         linkGithub: string;
+        linkPublicate?: string;
         
 }
