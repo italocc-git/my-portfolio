@@ -8,6 +8,7 @@ export const HeaderContainer = styled.div`
     left:0;
     top:0;
     right:0;
+    z-index:2;
 `
 
 export const HeaderContent = styled.div`
@@ -18,20 +19,20 @@ export const HeaderContent = styled.div`
     
     padding: 0 25px;
     position:relative;
-    z-index:2;
+    
 
     h6 {
         font-size:1.50rem;
         font-weight:500;
         line-height:1.1;
         letter-spacing:0.0075em;
-        z-index:2;
+        
         color:#fff;
     }
     ul{
         display: flex ;
         gap:1rem;  
-        z-index:2;
+        
         
         li{
             font-size:1rem;
