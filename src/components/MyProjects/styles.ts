@@ -40,6 +40,7 @@ export const MyProjectItem = styled.div`
         height: 700px;
         background: #364d72;
         padding:10px 15px;
+        margin-bottom:3rem;
     .contentLayout {
         display: flex;
         align-items:center;
