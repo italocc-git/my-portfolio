@@ -1,0 +1,20 @@
+{
+    "about_me": "About Me",
+    "my_projects": "My Projects",
+    "my_goals": "My Goals",
+    "profile_description": "WEB Developer",
+    "about_me_description": "My name is Ítalo Costa, I am graduated in Information Systems from the FA7 college and I am currently working as a Front-End React WEB Developer. I have more than one year of experience as a Developer and I work at DartDigital developing projects , proposing solutions , performing application tests and bugs fixes. I'm passionate about programming , very committed and motivated by what I do . I'm always looking to learn new techniques and build solutions in my personal and professional projects.",
+    "access_repository": "Access Repository",
+    "access_website": "Access Web Site",
+    "libraries_used":"Libraries used:",
+    "about": "About:",
+    "my_activities_title": "Project My Activities",
+    "my_activities_about": "Project created to organize your daily activities. Application created in ReactJS has similar functionality to Trello.",
+    "admin_dashboard_title":"Project Admin Dashboard",
+    "admin_dashboard_about":"Simple user listing and CRUD project, where I used the Redux state context for practice",
+    "task_manager_title":"Project Task Manager Dashboard",
+    "task_manager_about":"Task management project where the user records their activities and ends when they complete them.",
+    "go_barber_title":"Project GoBarber",
+    "go_barber_about":"GoBarber is an application aimed at barbershop service providers. Developed in React, Node and React Native, the application offers customers appointments."
+    
+}

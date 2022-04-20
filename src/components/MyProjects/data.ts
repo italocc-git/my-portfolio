@@ -1,11 +1,13 @@
+
 import { MyProjectsListProps } from './types'
 import dashGifImage from '../../assets/gif/admin-dash.gif'
 import taskManagerGif from '../../assets/gif/taskManager-dash.gif'
+
 export const data: MyProjectsListProps[] = [
 
     {
-        title: 'Projeto My Activities',
-        about: 'Projeto criado para organizar suas atividades diárias . Aplicativo criado em ReactJS tem funcionalidades semelhantes ao Trello .',
+        title: 'my_activities_title',
+        about: 'my_activities_about',
         technologies: ['Typescript', 'React', 'React Hooks', 'Axios', 'React Modal', 'Date-fns', 'Immer', '@Unform', 'React-Toastify', 'json server', 'Yup',
             'Node', 'Express', 'Cors', 'Postgres', 'Bcrypt', 'JSON WEB Token', 'Multer', 'Typeorm'],
         demonstration: 'https://user-images.githubusercontent.com/50462308/124628309-b7f87800-de56-11eb-9946-be3e78bb515a.gif',
@@ -13,8 +15,8 @@ export const data: MyProjectsListProps[] = [
 
     },
     {
-        title: 'Projeto Admin Dashboard',
-        about: 'Projeto simples de listagem e CRUD de usuários , onde utilizei o contexto de estado Redux para prática',
+        title: 'admin_dashboard_title',
+        about: 'admin_dashboard_about',
         technologies: ['Typescript', 'React', 'AntdDesign', 'Axios', 'React Redux', 'Redux-Saga', 'Styled Components', 'React-dom'],
         linkGithub: 'https://github.com/italocc-git/admin-dashboard',
         demonstration: dashGifImage,
@@ -22,8 +24,8 @@ export const data: MyProjectsListProps[] = [
 
     },
     {
-        title: 'Projeto Task Manager Dashboard',
-        about: 'Projeto simples de gerenciamento de tarefas onde o usuário registra suas atividades e finaliza quando completá-las. ',
+        title: 'task_manager_title',
+        about: 'task_manager_about',
         technologies: ['Typescript', 'React', 'AntdDesign', 'React Redux', 'Redux Persist', 'Context API', 'Local Storage', 'Styled Components', 'React Modal', 'eslint', 'Git Flow Structure'],
         linkGithub: 'https://github.com/italocc-git/teste-dashboard-react',
         demonstration: taskManagerGif,
@@ -31,8 +33,8 @@ export const data: MyProjectsListProps[] = [
 
     },
     {
-        title: 'Projeto GoBarber',
-        about: ' GoBarber é uma aplicação voltada aos prestadores de serviço em barbearia.Desenvolvida em React e React Native, a aplicação oferece aos clientes agendamentos de horários.',
+        title: 'go_barber_title',
+        about: 'go_barber_about',
         technologies: ['Typescript', 'React', 'React Hooks', 'Axios', 'Unform', 'Date-fns', 'Polished', 'React-icons', 'React-router-dom', 'styled-components', 'Yup', 'uuidv4', 'React-spring',
             'Node', 'Express', 'Cors', 'Postgres', 'MongoDB', 'Redis', 'Bcrypt', 'JSON WEB Token', 'Multer', 'Typeorm'],
         linkGithub: 'https://github.com/italocc-git/gobarber-web',

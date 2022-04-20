@@ -21,18 +21,19 @@ export const HeaderContent = styled.div`
     position:relative;
     
 
-    h6 {
+    span {
         font-size:1.50rem;
         font-weight:500;
         line-height:1.1;
-        letter-spacing:0.0075em;
-        
+        letter-spacing:0.1005em;
+        position: fixed;
+        left: 45%;
         color:#fff;
     }
     ul{
         display: flex ;
         gap:1rem;  
-        
+        margin: 0;
         
         li{
             font-size:1rem;
@@ -40,6 +41,12 @@ export const HeaderContent = styled.div`
             cursor:pointer;
             &:hover {
             border-bottom: 1px solid #FFF;
+            }
+
+            img {
+                height:24px;
+                width:24px;
+                
             }
         }
     }

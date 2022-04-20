@@ -1,13 +1,13 @@
-import 'antd/dist/antd.css'
+import "antd/dist/antd.css";
 import { Dashboard } from "./pages/Dashboard";
-import GlobalStyle from './styles/global'
+import GlobalStyle from "./styles/global";
+import { IntlProvider } from "./hooks/intl";
 function App() {
   return (
-    <>
-      <GlobalStyle/>
-      <Dashboard/>
-    </>
-    
+    <IntlProvider>
+      <GlobalStyle />
+      <Dashboard />
+    </IntlProvider>
   );
 }
 
