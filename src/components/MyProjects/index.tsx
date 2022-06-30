@@ -6,6 +6,7 @@ import {
   MyProjectTitle,
   MyProjectSubtitle,
   MyProjectContent,
+  MyProjectContentDescription,
   MyProjectExternalButton,
 } from "./styles";
 import { data } from "./data";
@@ -52,21 +53,22 @@ export function MyProjects() {
         {data.map((item) => (
           <MyProjectItem>
             <MyProjectTitle>
-              {" "}
               <FormattedMessage id={item.title} />
             </MyProjectTitle>
             <MyProjectSubtitle>
               <FormattedMessage id="about" />
             </MyProjectSubtitle>
             <MyProjectContent>
-              <FormattedMessage id={item.about} />
+              <MyProjectContentDescription>
+                <FormattedMessage id={item.about} />
+              </MyProjectContentDescription>
               <div className="contentLayout">
-                <MyProjectExternalButton href={item.linkGithub}>
+                <MyProjectExternalButton target='_blank'  href={item.linkGithub}>
                   <FormattedMessage id="access_repository" />
                   <GithubOutlined />
                 </MyProjectExternalButton>
                 {item.linkPublicate && (
-                  <MyProjectExternalButton href={item.linkPublicate}>
+                  <MyProjectExternalButton target='_blank' href={item.linkPublicate}>
                     <FormattedMessage id="access_website" />
                     <IeOutlined />
                   </MyProjectExternalButton>

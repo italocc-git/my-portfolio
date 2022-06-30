@@ -4,7 +4,16 @@ import dashGifImage from '../../assets/gif/admin-dash.gif'
 import taskManagerGif from '../../assets/gif/taskManager-dash.gif'
 
 export const data: MyProjectsListProps[] = [
+    {
+        title: 'feedback_widget_title',
+        about: 'feedback_widget_about',
+        technologies: ['Typescript', 'React', 'React Hooks', 'Axios', 'Headlessui/react', 'classNames', 'firebase', 'phosphor-react', 'html2canvas', 'tailwind', 'react-router-dom',
+            'Node', 'Express', 'Cors', 'Postgres', 'Prisma', 'Multer', 'Typeorm'],
+        demonstration: undefined,
+        linkGithub: 'https://github.com/italocc-git/nlw-return-impulse',
+        linkPublicate: 'https://nlw-return-impulse-lake-six.vercel.app/'
 
+    },
     {
         title: 'my_activities_title',
         about: 'my_activities_about',

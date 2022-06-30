@@ -6,15 +6,16 @@
     "about_me_description": "Meu nome é Ítalo Costa, sou formado em Sistemas de Informações pela Faculdade 7 de Setembro (Fortaleza-CE) e atualmente estou trabalhando como Desenvolvedor WEB. Eu tenho mais de 1 ano de experiência e trabalho na empresa DartDigital desenvolvendo projetos , propondo soluções , realizando testes de aplicação e correções de bugs. Eu sou apaixonado por programação , bastante comprometido e motivado pelo que faço . Estou sempre buscando aprender técnicas e construindo soluções em meus projetos pessoais e profissionais.",
     "access_repository": "Acessar Repositório",
     "access_website": "Acessar WebSite",
-    "libraries_used":"Bibliotecas utilizadas:",
+    "libraries_used": "Bibliotecas utilizadas:",
     "about": "Sobre:",
+    "feedback_widget_title": "Projeto Feedback Widget",
+    "feedback_widget_about": "Projeto criado para o registro de feedbacks do usuário , onde ele reporta erros ou ideias de melhora para a aplicação com possibilidade de tirar print da tela e registrar um comentário relacionado. Além dessas funcionalidades , tem a possibilidade de envio de feedback por e-mail utilizando o serviço Mailtrap.",
     "my_activities_title": "Projeto My Activities",
     "my_activities_about": "Projeto criado para organizar suas atividades diárias . Aplicativo criado em ReactJS tem funcionalidades semelhantes ao Trello .",
-    "admin_dashboard_title":"Projeto Admin Dashboard",
-    "admin_dashboard_about":"Projeto simples de listagem e CRUD de usuários , onde utilizei o contexto de estado Redux para prática",
-    "task_manager_title":"Projeto Task Manager Dashboard",
-    "task_manager_about":"Projeto de gerenciamento de tarefas onde o usuário registra suas atividades e finaliza quando completá-las. ",
-    "go_barber_title":"Projeto GoBarber",
-    "go_barber_about":"GoBarber é uma aplicação voltada aos prestadores de serviço em barbearia.Desenvolvida em React, Node e React Native, a aplicação oferece aos clientes agendamentos de horários."
-    
+    "admin_dashboard_title": "Projeto Admin Dashboard",
+    "admin_dashboard_about": "Projeto simples de listagem e CRUD de usuários , onde utilizei o contexto de estado Redux para prática",
+    "task_manager_title": "Projeto Task Manager Dashboard",
+    "task_manager_about": "Projeto de gerenciamento de tarefas onde o usuário registra suas atividades e finaliza quando completá-las. ",
+    "go_barber_title": "Projeto GoBarber",
+    "go_barber_about": "GoBarber é uma aplicação voltada aos prestadores de serviço em barbearia.Desenvolvida em React, Node e React Native, a aplicação oferece aos clientes agendamentos de horários."
 }

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Carousel } from 'antd';
 
 type ArrowType = {
-    left ?: string
+    left?: string
     right?: string
 }
 
@@ -66,11 +66,19 @@ export const MyProjectSubtitle = styled.div`
             color:#FFF;
         
 `
-export const MyProjectContent = styled.p`
-            font-size:1rem;
-            color: #fff;
+export const MyProjectContent = styled.div`
+            
+            
             display:flex ;
             justify-content: space-between;
+            padding: 10px 10px;
+`
+
+export const MyProjectContentDescription = styled.p`
+    font-size:1rem;
+    color: #fff;
+    max-width: 50vw;
+    text-align: justify;
 `
 
 export const MyProjectExternalButton = styled.a`
