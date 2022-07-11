@@ -11,7 +11,7 @@
     "my_activities_title": "Project My Activities",
     "my_activities_about": "Project created to organize your daily activities. Application created in ReactJS has similar functionality to Trello.",
     "feedback_widget_title": "Project Feedback Widget",
-    "feedback_widget_about": "Project created to record user feedback, where he reports errors or ideas for improvement for the application with possibility of taking a screenshot of the screen and recording a related comment. In addition to these features , you can send feedback by e-mail using the Mailtrap service.",
+    "feedback_widget_about": "Project created to record user feedback, where he reports errors or ideas for improvement for the application with possibility of taking a screenshot of the screen and recording a related comment. In addition to these features , you can send feedback by e-mail using the Mailtrap service. New features were developed by me: Creation of the panel to view the feedbacks sent by a specific user, User authentication using social networks like Google and Facebook, Print preview sent by the user, Dark mode and responsive using tailwind.",
     "admin_dashboard_title": "Project Admin Dashboard",
     "admin_dashboard_about": "Simple user listing and CRUD project, where I used the Redux state context for practice",
     "task_manager_title": "Project Task Manager Dashboard",
