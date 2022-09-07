@@ -8,6 +8,8 @@
     "access_website": "Access Web Site",
     "libraries_used": "Libraries used:",
     "about": "About:",
+    "coffee_delivery_title": "Project Coffee Delivery",
+    "coffee_delivery_about": "Application to manage a shopping cart of a fictional coffee shop. This challenge was proposed in RocketSeat's ignite 2022 course, making the Figma model available for construction, the entire application built from scratch.",
     "my_activities_title": "Project My Activities",
     "my_activities_about": "Project created to organize your daily activities. Application created in ReactJS has similar functionality to Trello.",
     "feedback_widget_title": "Project Feedback Widget",
