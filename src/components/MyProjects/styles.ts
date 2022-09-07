@@ -8,7 +8,7 @@ type ArrowType = {
 
 export const MyProjectsContainer = styled.div`
      #myProjects{
-        text-align:center;
+        text-align: center;
         font-size:3rem;
         color:#fff;
         margin: 2rem 0;
@@ -43,12 +43,12 @@ export const MyProjectItem = styled.div`
         margin-bottom:3rem;
     .contentLayout {
         display: flex;
-        align-items:center;
-        justify-content:center;
+        align-items: center;
+        justify-content: space-evenly;
         gap:1.5rem;
     }
     img{
-        height: 450px;
+        height: 390px;
         margin-bottom:1rem;
     }
 `
@@ -69,7 +69,7 @@ export const MyProjectSubtitle = styled.div`
 export const MyProjectContent = styled.div`
             
             
-            display:flex ;
+            display: flex ;
             justify-content: space-between;
             padding: 10px 10px;
 `

@@ -2,14 +2,23 @@
 import { MyProjectsListProps } from './types'
 import dashGifImage from '../../assets/gif/admin-dash.gif'
 import taskManagerGif from '../../assets/gif/taskManager-dash.gif'
-
+import feedbackDemonstrationGif from '../../assets/gif/gif-feedbacks-app-demo.gif'
 export const data: MyProjectsListProps[] = [
+    {
+        title: 'coffee_delivery_title',
+        about: 'coffee_delivery_about',
+        technologies: ['Typescript', 'React', 'React Hooks', 'Headlessui/react', 'tailwind', 'react-router-dom', 'react-hook-form', 'localStorage', 'controlled/uncontrolled states', 'responsive'],
+        /* demonstration: feedbackDemonstrationGif, */
+        linkGithub: 'https://github.com/italocc-git/coffee-delivery',
+        /* linkPublicate: 'https://nlw-return-impulse-lake-six.vercel.app/' */
+
+    },
     {
         title: 'feedback_widget_title',
         about: 'feedback_widget_about',
         technologies: ['Typescript', 'React', 'React Hooks', 'Axios', 'Headlessui/react', 'classNames', 'firebase', 'phosphor-react', 'html2canvas', 'tailwind', 'react-router-dom',
             'Node', 'Express', 'Cors', 'Postgres', 'Prisma',],
-        demonstration: undefined,
+        demonstration: feedbackDemonstrationGif,
         linkGithub: 'https://github.com/italocc-git/nlw-return-impulse',
         linkPublicate: 'https://nlw-return-impulse-lake-six.vercel.app/'
 
