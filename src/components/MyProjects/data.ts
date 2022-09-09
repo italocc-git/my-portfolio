@@ -10,7 +10,7 @@ export const data: MyProjectsListProps[] = [
         technologies: ['Typescript', 'React', 'React Hooks', 'Headlessui/react', 'tailwind', 'react-router-dom', 'react-hook-form', 'localStorage', 'controlled/uncontrolled states', 'responsive'],
         /* demonstration: feedbackDemonstrationGif, */
         linkGithub: 'https://github.com/italocc-git/coffee-delivery',
-        /* linkPublicate: 'https://nlw-return-impulse-lake-six.vercel.app/' */
+         linkPublicate: 'https://coffee-delivery-sable.vercel.app/' 
 
     },
     {
