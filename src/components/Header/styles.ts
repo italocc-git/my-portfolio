@@ -27,7 +27,7 @@ export const HeaderContent = styled.div`
         line-height:1.1;
         letter-spacing:0.1005em;
         position: fixed;
-        left: 45%;
+        left: 47%;
         color:#fff;
     }
     ul{
