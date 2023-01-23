@@ -3,14 +3,24 @@ import { MyProjectsListProps } from './types'
 import dashGifImage from '../../assets/gif/admin-dash.gif'
 import taskManagerGif from '../../assets/gif/taskManager-dash.gif'
 import feedbackDemonstrationGif from '../../assets/gif/gif-feedbacks-app-demo.gif'
+import designSystemDemonstrationGif from '../../assets/gif/design-system-apresentation.gif'
 export const data: MyProjectsListProps[] = [
     {
         title: 'coffee_delivery_title',
         about: 'coffee_delivery_about',
-        technologies: ['Typescript', 'React', 'React Hooks', 'Headlessui/react', 'tailwind', 'react-router-dom', 'react-hook-form', 'localStorage', 'controlled/uncontrolled states', 'responsive'],
+        technologies: ['Typescript', 'React', 'React Hooks', 'Headlessui/react', 'tailwind', 'react-router-dom', 'react-hook-form', 'localStorage', 'controlled/uncontrolled states', 'responsive', 'jest'],
         /* demonstration: feedbackDemonstrationGif, */
         linkGithub: 'https://github.com/italocc-git/coffee-delivery',
-         linkPublicate: 'https://coffee-delivery-sable.vercel.app/' 
+        linkPublicate: 'https://coffee-delivery-sable.vercel.app/'
+
+    },
+    {
+        title: 'design_system_title',
+        about: 'design_system_about',
+        technologies: ['Typescript', 'React', 'Radix-ui', 'react-dom', 'polished', 'phosphor-react', '@stitches/react', '@storybook', 'vite', 'tsup', 'turbo'],
+        demonstration: designSystemDemonstrationGif,
+        linkGithub: 'https://github.com/italocc-git/05-design-system',
+        linkPublicate: 'https://italocc-git.github.io/05-design-system/?path=/story/home--page'
 
     },
     {
@@ -20,7 +30,8 @@ export const data: MyProjectsListProps[] = [
             'Node', 'Express', 'Cors', 'Postgres', 'Prisma',],
         demonstration: feedbackDemonstrationGif,
         linkGithub: 'https://github.com/italocc-git/nlw-return-impulse',
-        linkPublicate: 'https://nlw-return-impulse-lake-six.vercel.app/'
+        linkPublicate: 'https://nlw-return-impulse-lake-six.vercel.app/',
+        info: "attention_info"
 
     },
     {

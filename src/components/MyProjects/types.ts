@@ -1,9 +1,10 @@
 export interface MyProjectsListProps {
-        title:string;
+        title: string;
         about: string;
         technologies: string[];
         demonstration?: string;
         linkGithub: string;
         linkPublicate?: string;
-        
+        info?: string;
+
 }

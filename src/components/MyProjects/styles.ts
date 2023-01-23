@@ -51,6 +51,12 @@ export const MyProjectItem = styled.div`
         height: 390px;
         margin-bottom:1rem;
     }
+
+    .errorMessage {
+        color: #ef4411;
+        font-weight: 600;
+        
+    }
 `
 
 export const MyProjectTitle = styled.h1`
