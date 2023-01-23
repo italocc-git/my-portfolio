@@ -94,6 +94,9 @@ export function MyProjects() {
                     {techItem}
                   </Tag>
                 ))}
+                <div className="errorMessage" >
+                 {item.info && <FormattedMessage id="attention_info" />} 
+                </div>
               </div>
             </div>
           </MyProjectItem>
