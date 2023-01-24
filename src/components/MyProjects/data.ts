@@ -1,9 +1,9 @@
 
 import { MyProjectsListProps } from './types'
-import dashGifImage from '../../assets/gif/admin-dash.gif'
 import taskManagerGif from '../../assets/gif/taskManager-dash.gif'
 import feedbackDemonstrationGif from '../../assets/gif/gif-feedbacks-app-demo.gif'
 import designSystemDemonstrationGif from '../../assets/gif/design-system-apresentation.gif'
+import nlwsetupDemonstrationGif from '../../assets/gif/nlw-setup-demonstration.gif'
 export const data: MyProjectsListProps[] = [
     {
         title: 'coffee_delivery_title',
@@ -21,6 +21,15 @@ export const data: MyProjectsListProps[] = [
         demonstration: designSystemDemonstrationGif,
         linkGithub: 'https://github.com/italocc-git/05-design-system',
         linkPublicate: 'https://italocc-git.github.io/05-design-system/?path=/story/home--page'
+
+    },
+    {
+        title: 'nlw_habits_title',
+        about: 'nlw_habits_about',
+        technologies: ['Typescript', 'React', 'React Hooks', 'Axios', 'Tailwind', 'Radix-ui', 'Auth0', 'phosphor-react', 'CLSX', 'React-Toast-Notifications', 'Jotai',
+            'Node', 'Fastify', 'Dayjs', 'Jotai', 'Prisma', 'zod'],
+        demonstration: nlwsetupDemonstrationGif,
+        linkGithub: 'https://github.com/italocc-git/nlw-setup-2023',
 
     },
     {
@@ -44,30 +53,12 @@ export const data: MyProjectsListProps[] = [
 
     },
     {
-        title: 'admin_dashboard_title',
-        about: 'admin_dashboard_about',
-        technologies: ['Typescript', 'React', 'AntdDesign', 'Axios', 'React Redux', 'Redux-Saga', 'Styled Components', 'React-dom'],
-        linkGithub: 'https://github.com/italocc-git/admin-dashboard',
-        demonstration: dashGifImage,
-        linkPublicate: 'https://sharp-sinoussi-775e59.netlify.app/'
-
-    },
-    {
         title: 'task_manager_title',
         about: 'task_manager_about',
         technologies: ['Typescript', 'React', 'AntdDesign', 'React Redux', 'Redux Persist', 'Context API', 'Local Storage', 'Styled Components', 'React Modal', 'eslint', 'Git Flow Structure'],
         linkGithub: 'https://github.com/italocc-git/teste-dashboard-react',
         demonstration: taskManagerGif,
         linkPublicate: 'https://lovely-selkie-1a873d.netlify.app/'
-
-    },
-    {
-        title: 'go_barber_title',
-        about: 'go_barber_about',
-        technologies: ['Typescript', 'React', 'React Hooks', 'Axios', 'Unform', 'Date-fns', 'Polished', 'React-icons', 'React-router-dom', 'styled-components', 'Yup', 'uuidv4', 'React-spring',
-            'Node', 'Express', 'Cors', 'Postgres', 'MongoDB', 'Redis', 'Bcrypt', 'JSON WEB Token', 'Multer', 'Typeorm'],
-        linkGithub: 'https://github.com/italocc-git/gobarber-web',
-        /* ver a questão do link do backend */
 
     },
 ]

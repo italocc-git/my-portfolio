@@ -12,15 +12,13 @@
     "coffee_delivery_about": "Aplicação para gerenciar um carrinho de compras de uma cafeteria fictícia. Esse desafio foi proposto no curso ignite 2022 da RocketSeat , disponibilizando o modelo do Figma para construção, toda a aplicação foi construída do zero .",
     "design_system_title": "Projeto Design System com elementos do Radix",
     "design_system_about": "Um Design System projetado com um conjunto de padrões de estilização , para customizar elementos da biblioteca Radix.ui",
+    "nlw_habits_title": "Projeto Habits",
+    "nlw_habits_about": "Aplicação para gerenciar seus hábitos diários, Aplicação constrída na semana nlw setup e foi acrescentado mais recursos como : Autenticação usando o useAuth, Loading Page, contexto global com Jotai e Notificações.",
     "feedback_widget_title": "Projeto Feedback Widget",
     "feedback_widget_about": "Projeto criado para o registro de feedbacks do usuário , onde ele reporta erros ou ideias de melhora para a aplicação com possibilidade de tirar print da tela e registrar um comentário relacionado. Além dessas funcionalidades , tem a possibilidade de envio de feedback por e-mail utilizando o serviço Mailtrap.  Novas funcionalidades foram desenvolvidas por mim : Criação do dashboard para visualizar os feedbacks enviados por um usuário específico, Autenticação do usuário utilizando redes sociais como o Google e Facebook , Visualização do print enviado pelo usuário , Dark mode e responsividade utilizando o tailwind.",
     "my_activities_title": "Projeto My Activities",
     "my_activities_about": "Projeto criado para organizar suas atividades diárias . Aplicativo criado em ReactJS tem funcionalidades semelhantes ao Trello .",
-    "admin_dashboard_title": "Projeto Admin Dashboard",
-    "admin_dashboard_about": "Projeto simples de listagem e CRUD de usuários , onde utilizei o contexto de estado Redux para prática",
     "task_manager_title": "Projeto Task Manager Dashboard",
     "task_manager_about": "Projeto de gerenciamento de tarefas onde o usuário registra suas atividades e finaliza quando completá-las. ",
-    "go_barber_title": "Projeto GoBarber",
-    "go_barber_about": "GoBarber é uma aplicação voltada aos prestadores de serviço em barbearia.Desenvolvida em React, Node e React Native, a aplicação oferece aos clientes agendamentos de horários.",
     "attention_info": "Atenção : No momento essa aplicação se encontra com problemas no serviço de hospedagem railway, portanto não será possível testá-la em ambiente de produção. Para testar, siga as orientações do repositório github para executar o projeto do lado do frontend e do backend"
 }
