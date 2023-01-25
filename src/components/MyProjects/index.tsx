@@ -18,8 +18,10 @@ import {
 } from "@ant-design/icons";
 import { Tag } from "antd";
 import { FormattedMessage } from "react-intl";
-
-export function MyProjects() {
+type MyProjectsProps = {
+  id: string;
+}
+export function MyProjects({id} : MyProjectsProps) {
   const PrevArrow = (props: any) => {
     const { onClick } = props;
 
@@ -40,7 +42,7 @@ export function MyProjects() {
 
   return (
     <MyProjectsContainer>
-      <h1 id="myProjects">
+      <h1 id={id}>
         <FormattedMessage id="my_projects" />
       </h1>
       <CarroselAntd

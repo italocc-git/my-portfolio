@@ -7,6 +7,7 @@ import { MyProjects } from "../../components/MyProjects";
 import { AboutMe } from "../../components/AboutMe";
 import { Header } from "../../components/Header";
 import { FormattedMessage } from "react-intl";
+import { MyExperiences } from "../../components/MyExperiences";
 export function Dashboard() {
   return (
     <>
@@ -39,7 +40,8 @@ export function Dashboard() {
         </MainContent>
       </Main>
       <AboutMe id="aboutMe" />
-      <MyProjects />
+      <MyExperiences id="my_xp" />
+      <MyProjects id="myProjects" />
     </>
   );
 }
