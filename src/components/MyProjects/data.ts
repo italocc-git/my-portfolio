@@ -4,12 +4,15 @@ import taskManagerGif from '../../assets/gif/taskManager-dash.gif'
 import feedbackDemonstrationGif from '../../assets/gif/gif-feedbacks-app-demo.gif'
 import designSystemDemonstrationGif from '../../assets/gif/design-system-apresentation.gif'
 import nlwsetupDemonstrationGif from '../../assets/gif/nlw-setup-demonstration.gif'
+import gifCoffeeDelivery from '../../assets/gif/gif-coffee-delivery.gif'
+
+
 export const data: MyProjectsListProps[] = [
     {
         title: 'coffee_delivery_title',
         about: 'coffee_delivery_about',
         technologies: ['Typescript', 'React', 'React Hooks', 'Headlessui/react', 'tailwind', 'react-router-dom', 'react-hook-form', 'localStorage', 'controlled/uncontrolled states', 'responsive', 'jest'],
-        /* demonstration: feedbackDemonstrationGif, */
+        demonstration: gifCoffeeDelivery,
         linkGithub: 'https://github.com/italocc-git/coffee-delivery',
         linkPublicate: 'https://coffee-delivery-sable.vercel.app/'
 

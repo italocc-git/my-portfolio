@@ -35,15 +35,16 @@ export function Header() {
             </a>
           </li>
           <li>
+            <a href="#my_xp">
+              <FormattedMessage id="my_xp" />{" "}
+            </a>
+          </li>
+          <li>
             <a href="#myProjects">
               <FormattedMessage id="my_projects" />
             </a>
           </li>
-          {/* <li>
-            <a href="#myGoals">
-              <FormattedMessage id="my_goals" />{" "}
-            </a>
-          </li> */}
+           
         </ul>
       </HeaderContent>
     </HeaderContainer>
