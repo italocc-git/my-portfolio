@@ -12,7 +12,7 @@ A aplicação consiste em apresentar o meu portfólio com uma breve introdução
 
 ## Layout web
 
-![Web 1](https://github.com/italocc-git/my-portfolio/blob/master/src/assets/gif/my-portfolio-gif)
+![Web 1](https://github.com/italocc-git/my-portfolio/blob/master/src/assets/gif/my-portfolio-gif.gif)
 
 # Tecnologias utilizadas
 ## Front end
