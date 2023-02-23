@@ -7,12 +7,13 @@ type MyExperiencesProps = {
     id : string
 }
 export function MyExperiences({id} : MyExperiencesProps){
-
+    /* title="Quantidade de projetos desenvolvidos por tecnologia específica"  */
     return(
         <MyExperiencesContent id={id}>
             <h1>
                 <FormattedMessage id="my_xp" />
-                <Tooltip  title="Quantidade de projetos desenvolvidos por tecnologia específica">
+                <Tooltip  
+                title={<FormattedMessage id="tooltip_title" />}>
                     <Info size={32} weight="light" cursor="pointer" />
                 </Tooltip>
             </h1>

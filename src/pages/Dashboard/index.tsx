@@ -24,17 +24,17 @@ export function Dashboard() {
           </h6>
           <SocialMedia>
             <a href="https://github.com/italocc-git">
-              <img src={Github} alt="GitHub" />
+              <img src={Github} alt="GitHub" className="github" />
             </a>
             <a href="mailto:italocc16@gmail.com">
-              <img src={Gmail} alt="Gmail" />
+              <img src={Gmail} alt="Gmail" className="gmail" />
             </a>
 
             <a href="https://www.instagram.com/italoccavalcante/">
-              <img src={Instagram} alt="Instagram" />
+              <img src={Instagram} alt="Instagram"  className="insta"/>
             </a>
             <a href="https://wa.me/5588999075544">
-              <img src={Whatsapp} alt="Whatsapp" />
+              <img src={Whatsapp} alt="Whatsapp" className="whats" />
             </a>
           </SocialMedia>
         </MainContent>

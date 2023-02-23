@@ -41,9 +41,36 @@ export const SocialMedia = styled.ul`
         img{
             width:30px;
             height:30px;
+            transition: background 0.2s;
 
+            &:hover.github {
+                
+                background: black;
+                
+            }
+            &:hover.gmail {
+                
+                background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+                
+            }
+
+            &:hover.insta {
+               
+                background: #d6249f;
+                background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+                
+            }
+
+            &:hover.whats {
+                
+                background: #1DA57A;
+                
+            }
         }
         text-decoration:none;
+        
+        
+    
     }
 `
 

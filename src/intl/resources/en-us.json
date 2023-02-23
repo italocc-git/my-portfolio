@@ -20,5 +20,6 @@
     "feedback_widget_about": "Project created to record user feedback, where he reports errors or ideas for improvement for the application with possibility of taking a screenshot of the screen and recording a related comment. In addition to these features , you can send feedback by e-mail using the Mailtrap service. New features were developed by me: Creation of the panel to view the feedbacks sent by a specific user, User authentication using social networks like Google and Facebook, Print preview sent by the user, Dark mode and responsive using tailwind.",
     "task_manager_title": "Project Task Manager Dashboard",
     "task_manager_about": "Task management project where the user records their activities and ends when they complete them.",
-    "attention_info": "Attention: This application has problems with the railway hosting service, so it will not be possible to test it in a production environment. To test, follow the github repo guidance to run the project on frontend and backend."
+    "attention_info": "Attention: This application has problems with the railway hosting service, so it will not be possible to test it in a production environment. To test, follow the github repo guidance to run the project on frontend and backend.",
+    "tooltip_title": "Number of projects developed by specific technology"
 }

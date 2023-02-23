@@ -20,5 +20,6 @@
     "my_activities_about": "Projeto criado para organizar suas atividades diárias . Aplicativo criado em ReactJS tem funcionalidades semelhantes ao Trello .",
     "task_manager_title": "Projeto Task Manager Dashboard",
     "task_manager_about": "Projeto de gerenciamento de tarefas onde o usuário registra suas atividades e finaliza quando completá-las. ",
-    "attention_info": "Atenção : No momento essa aplicação se encontra com problemas no serviço de hospedagem railway, portanto não será possível testá-la em ambiente de produção. Para testar, siga as orientações do repositório github para executar o projeto do lado do frontend e do backend"
+    "attention_info": "Atenção : No momento essa aplicação se encontra com problemas no serviço de hospedagem railway, portanto não será possível testá-la em ambiente de produção. Para testar, siga as orientações do repositório github para executar o projeto do lado do frontend e do backend",
+    "tooltip_title": "Quantidade de projetos desenvolvidos por tecnologia específica"
 }
