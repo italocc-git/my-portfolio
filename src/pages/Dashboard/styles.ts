@@ -42,7 +42,7 @@ export const SocialMedia = styled.ul`
             width:30px;
             height:30px;
             transition: background 0.2s;
-
+            overflow: inherit;
             &:hover.github {
                 
                 background: black;

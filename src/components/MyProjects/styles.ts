@@ -7,17 +7,20 @@ type ArrowType = {
 }
 
 export const MyProjectsContainer = styled.div`
+
      #myProjects{
         text-align: center;
         font-size:3rem;
         color:#fff;
         margin: 2rem 0;
+        
     } 
 
 `
 
 export const CarroselAntd = styled(Carousel)`
     padding: 0 50px; 
+    
 `
 
 export const CarrouselArrow = styled.div<ArrowType>`
@@ -28,6 +31,7 @@ export const CarrouselArrow = styled.div<ArrowType>`
     color: white;
     font-size:1.5rem;
     transition: color 0.5s;
+    
     
     &:hover{
         color:#1890ff
@@ -41,6 +45,7 @@ export const MyProjectItem = styled.div`
         background: #364d72;
         padding:10px 15px;
         margin-bottom:3rem;
+        border-radius: 5px;
     .contentLayout {
         display: flex;
         align-items: center;
