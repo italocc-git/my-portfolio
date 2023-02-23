@@ -4,27 +4,32 @@ import { Bar } from '@ant-design/plots';
         const data = [
           {
             language: 'Typescript',
-            projectsAmount: 57,
+            projectsAmount: 29,
           },
           {
             language: 'React',
-            projectsAmount: 50,
-          },
-          {
-            language: 'React Native',
-            projectsAmount: 16,
-          },
-          {
-            language: 'NextJS',
-            projectsAmount: 11,
+            projectsAmount: 23,
           },
           {
             language: 'Node',
-            projectsAmount: 11,
+            projectsAmount: 14,
+          },
+          
+          {
+            language: 'React Native',
+            projectsAmount: 5,
+          },
+          {
+            language: 'NextJS',
+            projectsAmount: 5,
+          },
+          {
+            language: 'Javascript',
+            projectsAmount: 4,
           },
           {
             language: 'Jest',
-            projectsAmount: 4,
+            projectsAmount: 2,
           },
           
         ]

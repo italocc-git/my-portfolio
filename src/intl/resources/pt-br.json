@@ -3,7 +3,7 @@
     "my_projects": "Meus Projetos",
     "my_xp": "Quantidade de projetos",
     "profile_description": "Desenvolvedor WEB",
-    "about_me_description": "Meu nome é Ítalo Costa, sou formado em Sistemas de Informações pela Faculdade 7 de Setembro (Fortaleza-CE) e eu sou Desenvolvedor Front-End React Pleno. Eu tenho mais de 2 anos de experiência como Desenvolvedor React e atualmente trabalho na empresa DartDigital desenvolvendo projetos , propondo soluções , realizando testes de aplicação e correções de bugs. Eu sou apaixonado por programação , bastante comprometido e motivado pelo que faço . Estou sempre buscando aprender novas técnicas e construir soluções em meus projetos pessoais e profissionais.",
+    "about_me_description": "Meu nome é Ítalo Costa, sou formado em Sistemas de Informações pela Faculdade 7 de Setembro (Fortaleza-CE) e trabalho como desenvolvedor WEB Javascript. Eu tenho mais de 2 anos de experiência na area trabalhando em projetos profissionais e pessoais. Atualmente estou em busca de novas oportunidades como Desenvolvedor FullStack ou Frontend React/Native. Eu sou apaixonado por programação, bastante comprometido e motivado pelo que faço . Estou sempre buscando aprender novas técnicas e construir soluções nos meus projetos.",
     "access_repository": "Acessar Repositório",
     "access_website": "Acessar WebSite",
     "libraries_used": "Bibliotecas utilizadas:",
@@ -21,5 +21,5 @@
     "task_manager_title": "Projeto Task Manager Dashboard",
     "task_manager_about": "Projeto de gerenciamento de tarefas onde o usuário registra suas atividades e finaliza quando completá-las. ",
     "attention_info": "Atenção : No momento essa aplicação se encontra com problemas no serviço de hospedagem railway, portanto não será possível testá-la em ambiente de produção. Para testar, siga as orientações do repositório github para executar o projeto do lado do frontend e do backend",
-    "tooltip_title": "Quantidade de projetos desenvolvidos por tecnologia específica"
+    "tooltip_title": "Quantidade de projetos pessoais desenvolvidos por tecnologia específica"
 }

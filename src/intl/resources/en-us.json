@@ -3,7 +3,7 @@
     "my_projects": "My Projects",
     "my_xp": "Number of projects",
     "profile_description": "WEB Developer",
-    "about_me_description": "My name is Ítalo Costa, I am graduated in Information Systems from the FA7 college and I am Middle React Front-End Developer. I have more than two years of experience as a React Developer and currently I work at DartDigital developing projects , proposing solutions , performing application tests and bugs fixes. I'm passionate about programming , very committed and motivated by what I do . I'm always looking to learn new techniques and build solutions in my personal and professional projects.",
+    "about_me_description": "My name is Ítalo Costa, I have a degree in Information Systems from Faculdade 7 de Setembro (Fortaleza-CE) and I work as a WEB Javascript developer. I have more than 2 years of experience in the area working on professional and personal projects. I am currently in looking for new opportunities as a FullStack Developer or Frontend React/Native.",
     "access_repository": "Access Repository",
     "access_website": "Access Web Site",
     "libraries_used": "Libraries used:",
@@ -21,5 +21,5 @@
     "task_manager_title": "Project Task Manager Dashboard",
     "task_manager_about": "Task management project where the user records their activities and ends when they complete them.",
     "attention_info": "Attention: This application has problems with the railway hosting service, so it will not be possible to test it in a production environment. To test, follow the github repo guidance to run the project on frontend and backend.",
-    "tooltip_title": "Number of projects developed by specific technology"
+    "tooltip_title": "Number of personal projects developed by specific technology"
 }
