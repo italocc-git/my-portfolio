@@ -28,14 +28,32 @@ import { Bar } from '@ant-design/plots';
           },
           
         ]
+        
 
         const config  = {
           data,
           xField: 'projectsAmount',
           yField: 'language',
           seriesField: 'language',
-         
+          legend: {
+            itemName: {
+              style: {
+                fill:'white',
+                fontWeight: 500
+              }
+            }
+          },
+          yAxis: {
+            label: {
+              style: {
+                fill: 'white',
+                
+              }
+            }
+          }
+          
         }
-        return <Bar {...config} />;
+        return <Bar {...config}   />;
     }
 
+   

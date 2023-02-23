@@ -6,14 +6,31 @@ export default createGlobalStyle`
     padding:0;
     box-sizing: border-box;
     outline: 0;
-
-   
+    scroll-behavior: smooth;
+    
+  }
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: #495670 #312e38;
+    overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #312e38;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #495670;
+    border: 3px solid #312e38;
+    border-radius: 10px;
   }
 
   body {
     background : #312e38;
     color: white;
     -webkit-font-smoothing: antialiased;
+   
   }
   a{
     text-decoration:none;

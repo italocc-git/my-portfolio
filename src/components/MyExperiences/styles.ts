@@ -7,7 +7,7 @@ export const MyExperiencesContent = styled.div`
     min-height: 290px;
     margin-top: 2rem;
     box-shadow: 0 1rem 2rem hsl(0 0% 0% / 20%);
-    background-color: #FFF;
+    background-color: #364d72;
     h1 {
         
         font-size: 3rem;
@@ -16,6 +16,7 @@ export const MyExperiencesContent = styled.div`
         align-items: center;
         justify-content: center;
         gap: 1.5rem;
+        color: #fff;
 
         svg: {
             cursor: pointer;
