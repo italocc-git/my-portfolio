@@ -12,7 +12,7 @@ export const MyProjectsContainer = styled.div`
         text-align: center;
         font-size:3rem;
         color:#fff;
-        margin: 2rem 0;
+        margin: 3rem 0;
         
     } 
 
@@ -42,7 +42,7 @@ export const CarrouselArrow = styled.div<ArrowType>`
 
 export const MyProjectItem = styled.div`
         height: 700px;
-        background: #364d72;
+        background:  #312E49;
         padding:10px 15px;
         margin-bottom:3rem;
         border-radius: 5px;

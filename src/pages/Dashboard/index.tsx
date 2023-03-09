@@ -40,8 +40,9 @@ export function Dashboard() {
         </MainContent>
       </Main>
       <AboutMe id="aboutMe" />
-      <MyExperiences id="my_xp" />
       <MyProjects id="myProjects" />
+      <MyExperiences id="my_xp" />
+      
     </>
   );
 }

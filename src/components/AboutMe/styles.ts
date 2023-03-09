@@ -3,11 +3,11 @@ import styled from 'styled-components'
 export const AboutMeContent = styled.div`
 
 padding: 1rem 3rem;
-margin: 0 50px;
+margin: 0 3rem;
 border-radius: 5px;
 min-height: 290px;
 margin-top: 1rem;
-background-color: #364d72;
+background-color: #312E49;
 box-shadow: 0 1rem 2rem hsl(0 0% 0% / 20%);
 h1 {
     text-align: center;

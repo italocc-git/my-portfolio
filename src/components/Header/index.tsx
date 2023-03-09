@@ -4,6 +4,8 @@ import USflag from "../../assets/flags/usa.png";
 import { useIntl as useReactIntl } from "react-intl";
 import { useIntl } from "../../hooks/intl";
 import { FormattedMessage } from "react-intl";
+import resume from '../../tmp/resume.pdf'
+import resumeBR from '../../tmp/Currículo.pdf'
 export function Header() {
   const intl = {
     ...useIntl(),
@@ -12,6 +14,7 @@ export function Header() {
 
   const handleLanguage = (locale: "pt-BR" | "en-US") => {
     intl.setLocale(locale);
+    console.log(intl.locale)
   };
 
   return (
@@ -35,13 +38,19 @@ export function Header() {
             </a>
           </li>
           <li>
+            <a href="#myProjects">
+              <FormattedMessage id="my_projects" />
+            </a>
+          </li>
+          <li>
             <a href="#my_xp">
               <FormattedMessage id="my_xp" />{" "}
             </a>
           </li>
+          
           <li>
-            <a href="#myProjects">
-              <FormattedMessage id="my_projects" />
+            <a href={intl.locale === 'pt-BR' ? resumeBR : resume} target='_blank' rel="noreferrer">
+              <FormattedMessage id="resume" />
             </a>
           </li>
            
