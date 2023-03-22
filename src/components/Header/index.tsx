@@ -5,7 +5,7 @@ import { useIntl as useReactIntl } from "react-intl";
 import { useIntl } from "../../hooks/intl";
 import { FormattedMessage } from "react-intl";
 import resume from '../../tmp/resume.pdf'
-import resumeBR from '../../tmp/Currículo.pdf'
+import resumeBR from '../../tmp/Curriculo.pdf'
 export function Header() {
   const intl = {
     ...useIntl(),
