@@ -5,9 +5,18 @@ import feedbackDemonstrationGif from '../../assets/gif/gif-feedbacks-app-demo.gi
 import designSystemDemonstrationGif from '../../assets/gif/design-system-apresentation.gif'
 import nlwsetupDemonstrationGif from '../../assets/gif/nlw-setup-demonstration.gif'
 import gifCoffeeDelivery from '../../assets/gif/gif-coffee-delivery.gif'
-
+import rickAndMortyDemonstrationGif from '../../assets/gif/rick-and-morty-presentation-gif.gif'
 
 export const data: MyProjectsListProps[] = [
+    {
+        title: 'ricky_and_morty_title',
+        about: 'ricky_and_morty_about',
+        technologies: ['Typescript', 'React', 'React Hooks', 'Next', 'Styled Components', 'Redux', 'Ant Design', 'localStorage', 'controlled/uncontrolled states', 'responsive', 'Form Validation'],
+        demonstration: rickAndMortyDemonstrationGif,
+        linkGithub: 'https://github.com/italocc-git/rick-and-morty-app',
+        linkPublicate: 'https://rick-and-morty-hqqts6ib7-italocc-git.vercel.app/'
+
+    },
     {
         title: 'coffee_delivery_title',
         about: 'coffee_delivery_about',

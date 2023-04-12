@@ -9,6 +9,8 @@
     "libraries_used": "Bibliotecas utilizadas:",
     "about": "Sobre:",
     "resume": "Currículo",
+    "ricky_and_morty_title": "Projeto Ricky and Morty",
+    "ricky_and_morty_about": "O projeto consiste em uma tela de listagem de personanges com busca e paginação e uma tela de detalhes que deve conter informações sobre os personangens da série Rick and Morty e uma opção para favoritar ou não o personagem. Toda a aplicação foi construída do zero em 1 semana",
     "coffee_delivery_title": "Projeto Coffee Delivery",
     "coffee_delivery_about": "Aplicação para gerenciar um carrinho de compras de uma cafeteria fictícia. Esse desafio foi proposto no curso ignite 2022 da RocketSeat , disponibilizando o modelo do Figma para construção, toda a aplicação foi construída do zero .",
     "design_system_title": "Projeto Design System com elementos do Radix",
