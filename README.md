@@ -1,20 +1,19 @@
 # My Portfolio
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/italocc-git/my-portfolio/blob/master/LICENSE) 
 
-# Sobre o projeto
+# About the Project
 
 https://my-portfolio-italo.netlify.app/
 
-My Portfolio é uma aplicação front end web bilíngue construída em React.
+My Portfolio is a bilingual web front end application built in React.
 
-A aplicação consiste em apresentar o meu portfólio com uma breve introdução sobre mim , minhas informações de contato , projetos pessoais e histórico de projetos já criados.
-
+The application consists of presenting my portfolio with a brief introduction about me, my contact information, personal projects and history of projects already created.
 
 ## Layout web
 
 ![Web 1](https://github.com/italocc-git/my-portfolio/blob/master/src/assets/gif/my-portfolio-gif.gif)
 
-# Tecnologias utilizadas
+# Technologies
 ## Front end
 - HTML / CSS / JS / TypeScript
 - ReactJS
@@ -22,29 +21,30 @@ A aplicação consiste em apresentar o meu portfólio com uma breve introdução
 - Phosphor React
 - Styled Components
 - Craco less
-## Implantação em produção
+
+## Production Implementation
 - Front end web: Netlify
 
-# Como executar o projeto
+# How to run the project
 
 ## Front end web
 Pré-requisitos: npm / yarn
 
 ```bash
-# clonar repositório
+# clone the repository
 git clone https://github.com/italocc-git/my-portfolio.git
 
-# entrar na pasta do projeto chamada my-portfolio
+# enter the project folder called 'my-portfolio'
 cd my-portfolio
 
-# instalar dependências
+# install dependencies
 yarn install / npm install
 
-# executar o projeto
+# run the project
 yarn start / npm run start
 ```
 
-# Autor
+# Author
 
 Ítalo Costa Cavalcante
 
