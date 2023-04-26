@@ -58,7 +58,7 @@ import { Bar } from '@ant-design/plots';
           }
           
         }
-        return <Bar {...config}   />;
+        return <Bar  {...config}   />;
     }
 
    

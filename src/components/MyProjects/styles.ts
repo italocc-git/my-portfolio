@@ -41,20 +41,43 @@ export const CarrouselArrow = styled.div<ArrowType>`
 
 
 export const MyProjectItem = styled.div`
-        height: 700px;
+        height: 100%;
         background:  #312E49;
         padding:10px 15px;
         margin-bottom:3rem;
         border-radius: 5px;
+
+        h1 {
+            font-size:1.2rem;
+            font-weight:600;
+            color:#FFF;
+        }
     .contentLayout {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         gap:1.5rem;
+
+        @media(max-width: 1070px){
+            & {
+                flex-direction: column;
+            }
+        }
     }
     img{
         height: 390px;
         margin-bottom:1rem;
+
+        @media(max-width: 1070px){
+            & {
+                max-height: 205px;
+            }
+        }
+        @media(max-width: 470px){
+            & {
+                max-height: 135px;
+            }
+        }
     }
 
     .errorMessage {
@@ -69,20 +92,41 @@ export const MyProjectTitle = styled.h1`
         color:#FFF;
         font-size:2rem;
         font-weight:600;
-`
 
-export const MyProjectSubtitle = styled.div`
-            font-size:1.2rem;
+        @media(max-width: 840px){
+            & {
+                font-size:1rem;
+            }
+        }
+`
+export const MyProjectTechnologies = styled.div`
+    h1{
+        font-size:1.2rem;
             font-weight:600;
             color:#FFF;
-        
+    }
+    @media(max-width: 840px){
+            & {
+                display: none;
+            }
+        }
+
+
 `
+
 export const MyProjectContent = styled.div`
             
             
             display: flex ;
             justify-content: space-between;
             padding: 10px 10px;
+
+            @media(max-width: 1270px){
+            & {
+                flex-direction : column;
+                align-items: center;
+            }
+        }
 `
 
 export const MyProjectContentDescription = styled.p`

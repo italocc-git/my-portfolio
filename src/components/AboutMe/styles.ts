@@ -21,7 +21,23 @@ p{
     line-height:2.5rem;
     font-family: 'Roboto Slab', serif;
     letter-spacing: 0.01071em;
-    text-align:justify;
+    text-align: justify;
+}
+
+@media(max-width: 640px){
+    & {
+        padding: 0.5rem 1rem;
+        margin: 0 1rem;
+
+        h1 {
+            margin: 1rem 0;
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+    }
 }
 
 

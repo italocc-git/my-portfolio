@@ -29,6 +29,12 @@ export const HeaderContent = styled.div`
         position: fixed;
         left: 47%;
         color:#fff;
+
+        @media(max-width: 1366px){
+            & {
+                display:none;
+            }
+        }
     }
     ul{
         display: flex ;
@@ -48,6 +54,11 @@ export const HeaderContent = styled.div`
                 width:24px;
                 
             }
+        }
+        @media(max-width: 660px){
+             & a {
+                display:none;
+            } 
         }
     }
 `

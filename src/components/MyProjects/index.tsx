@@ -4,10 +4,10 @@ import {
   CarrouselArrow,
   MyProjectItem,
   MyProjectTitle,
-  MyProjectSubtitle,
   MyProjectContent,
   MyProjectContentDescription,
   MyProjectExternalButton,
+  MyProjectTechnologies,
 } from "./styles";
 import { data } from "./data";
 import {
@@ -57,9 +57,9 @@ export function MyProjects({id} : MyProjectsProps) {
             <MyProjectTitle>
               <FormattedMessage id={item.title} />
             </MyProjectTitle>
-            <MyProjectSubtitle>
+            <h1>
               <FormattedMessage id="about" />
-            </MyProjectSubtitle>
+            </h1>
             <MyProjectContent>
               <MyProjectContentDescription>
                 <FormattedMessage id={item.about} />
@@ -84,10 +84,11 @@ export function MyProjects({id} : MyProjectsProps) {
                   <img src={item.demonstration} alt={item.title} />
                 )}
               </div>
-              <div>
-                <MyProjectSubtitle>
+              <MyProjectTechnologies>
+                <h1>
                   <FormattedMessage id="libraries_used" />{" "}
-                </MyProjectSubtitle>
+                </h1>
+                
                 {item.technologies.map((techItem, index) => (
                   <Tag
                     style={{ margin: "5px 10px" }}
@@ -96,10 +97,11 @@ export function MyProjects({id} : MyProjectsProps) {
                     {techItem}
                   </Tag>
                 ))}
+                
                 <div className="errorMessage" >
                  {item.info && <FormattedMessage id="attention_info" />} 
                 </div>
-              </div>
+              </MyProjectTechnologies>
             </div>
           </MyProjectItem>
         ))}
