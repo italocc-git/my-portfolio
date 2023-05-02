@@ -6,8 +6,18 @@ import designSystemDemonstrationGif from '../../assets/gif/design-system-apresen
 import nlwsetupDemonstrationGif from '../../assets/gif/nlw-setup-demonstration.gif'
 import gifCoffeeDelivery from '../../assets/gif/gif-coffee-delivery.gif'
 import rickAndMortyDemonstrationGif from '../../assets/gif/rick-and-morty-presentation-gif.gif'
+import rentxAppDemonstrationGif from '../../assets/gif/rentx-gif.gif'
 
 export const data: MyProjectsListProps[] = [
+    {
+        title: 'rentx_title',
+        about: 'rentx_about',
+        technologies: ['Typescript', 'React', 'React Hooks', 'TailwindCSS', 'Phosphor Icons', 'Nookies', 'RadixUI', 'Headless React', 'controlled/uncontrolled states', 'responsive', 'Zod','DayJS', 'React-Calendar','React-Responsive-Carousel'],
+        demonstration: rentxAppDemonstrationGif,
+        linkGithub: 'https://github.com/italocc-git/rentx-web',
+        linkPublicate: 'https://rentx-web.vercel.app/'
+
+    },
     {
         title: 'ricky_and_morty_title',
         about: 'ricky_and_morty_about',
