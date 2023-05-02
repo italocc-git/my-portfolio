@@ -10,7 +10,7 @@
     "about": "About:",
     "resume": "Resume",
     "rentx_title": "Rentx Project",
-    "rentx_about": "Fictitious car rental application, using React with Tailwind CSS responsive. This application was built based on the template Figma provided by Rocketseat",
+    "rentx_about": "Fictitious car rental system, using React with Tailwind CSS responsive. This application was built based on the template Figma provided by Rocketseat",
     "ricky_and_morty_title": "Ricky and Morty App Project",
     "ricky_and_morty_about": "The project consists of a character list screen with search and pagination and a details screen that should contain information about the characters from the Rick and Morty series and an option to favor or not the character. The entire application was built from scratch in 1 week",
     "coffee_delivery_title": "Project Coffee Delivery",
