@@ -14,7 +14,6 @@ export function Header() {
 
   const handleLanguage = (locale: "pt-BR" | "en-US") => {
     intl.setLocale(locale);
-    console.log(intl.locale)
   };
 
   return (
