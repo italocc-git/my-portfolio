@@ -7,17 +7,21 @@ type ArrowType = {
 }
 
 export const MyProjectsContainer = styled.div`
-
-     #myProjects{
-        text-align: center;
-        font-size:3rem;
-        color:#fff;
-        margin: 3rem 0;
-        
-    } 
+    box-shadow: rgba(250, 250, 250, 0.1) 0px 10px 15px;
+    box-sizing: content-box;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:1.5rem;
 
 `
-
+export const MyProjectsTitle = styled.h1`
+    text-align: center;
+        font-size:3rem;
+        color:#fff;
+        padding: 3rem 0;
+`
 export const CarroselAntd = styled(Carousel)`
     padding: 0 50px; 
     
@@ -42,7 +46,6 @@ export const CarrouselArrow = styled.div<ArrowType>`
 
 export const MyProjectItem = styled.div`
         height: 100%;
-        background:  #312E49;
         padding:10px 15px;
         margin-bottom:3rem;
         border-radius: 5px;

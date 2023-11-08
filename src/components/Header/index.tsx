@@ -41,11 +41,6 @@ export function Header() {
               <FormattedMessage id="my_projects" />
             </a>
           </li>
-          <li>
-            <a href="#my_xp">
-              <FormattedMessage id="my_xp" />{" "}
-            </a>
-          </li>
           
           <li>
             <a href={intl.locale === 'pt-BR' ? resumeBR : resume} target='_blank' rel="noreferrer">

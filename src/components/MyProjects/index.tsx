@@ -1,5 +1,6 @@
 import {
   MyProjectsContainer,
+  MyProjectsTitle,
   CarroselAntd,
   CarrouselArrow,
   MyProjectItem,
@@ -41,10 +42,10 @@ export function MyProjects({id} : MyProjectsProps) {
   };
 
   return (
-    <MyProjectsContainer>
-      <h1 id={id}>
+    <MyProjectsContainer id={id}>
+      <MyProjectsTitle >
         <FormattedMessage id="my_projects" />
-      </h1>
+      </MyProjectsTitle>
       <CarroselAntd
         arrows={true}
         prevArrow={<PrevArrow />}
