@@ -9,6 +9,7 @@ min-height: 290px;
 margin-top: 1rem;
 background-color: #312E49;
 box-shadow: 0 1rem 2rem hsl(0 0% 0% / 20%);
+
 h1 {
     text-align: center;
     margin:3rem 0;

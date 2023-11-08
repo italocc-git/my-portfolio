@@ -1,4 +1,3 @@
-import "antd/dist/antd.less";
 import { Dashboard } from "./pages/Dashboard";
 import GlobalStyle from "./styles/global";
 import { IntlProvider } from "./hooks/intl";
