@@ -102,35 +102,6 @@ export const MyProjectTitle = styled.h1`
             }
         }
 `
-export const MyProjectTechnologies = styled.div`
-    h1{
-        font-size:1.2rem;
-            font-weight:600;
-            color:#FFF;
-    }
-    @media(max-width: 840px){
-            & {
-                display: none;
-            }
-        }
-
-
-`
-
-export const MyProjectContent = styled.div`
-            
-            
-            display: flex ;
-            justify-content: space-between;
-            padding: 10px 10px;
-
-            @media(max-width: 1270px){
-            & {
-                flex-direction : column;
-                align-items: center;
-            }
-        }
-`
 
 export const MyProjectContentDescription = styled.p`
     font-size:1rem;
@@ -152,4 +123,52 @@ export const MyProjectExternalButton = styled.a`
                 width:28px;
                 height:28px ;
             }
+`
+
+export const MyProjectContent = styled.div`   
+            display: flex ;
+            justify-content: space-between;
+            padding: 10px 10px;
+
+            @media(max-width: 1270px){
+            & {
+                flex-direction : column;
+                align-items: center;
+            }
+        }
+`
+
+export const MyProjectTechnologies = styled.div`
+    display: grid;
+    grid-template-columns: 140px 140px 140px 140px;
+    column-gap: 1.5rem;
+
+    @media(max-width: 840px){
+            & {
+                display: none;
+            }
+        }
+`
+
+export const MyProjectTechnologiesItem = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+        img {
+            width: 75px;
+            height: 75px;
+            transition: transform 0.5s;
+            border-radius: 0.25rem;
+
+            &:hover {
+                transform: translate(0, 20%);
+            }
+        }
+        span {
+            font-size: 0.8rem;
+        }
 `

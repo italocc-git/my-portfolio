@@ -14,6 +14,11 @@ export const Main = styled.div`
         border-radius: 50%;
         height: 150px;
         width: 150px;
+        transition: transform 1s;
+
+        &:hover {
+            transform: scale(1.15);
+        }
     }
 
 `
@@ -42,10 +47,18 @@ export const SocialMedia = styled.ul`
             width:30px;
             height:30px;
             transition: background 0.2s;
+            transition: transform 1s;
+
+      
             overflow: inherit;
+
+            &:hover {
+                transform: scale(1.5);
+            }
             &:hover.github {
                 
                 background: black;
+                
                 
             }
             &:hover.gmail {

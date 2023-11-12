@@ -9,20 +9,38 @@ import {
   MyProjectContentDescription,
   MyProjectExternalButton,
   MyProjectTechnologies,
+  MyProjectTechnologiesItem
 } from "./styles";
-import { data } from "./data";
 import {
   GithubOutlined,
   IeOutlined,
   LeftCircleOutlined,
   RightCircleOutlined,
 } from "@ant-design/icons";
-import { Tag } from "antd";
 import { FormattedMessage } from "react-intl";
+import { useEffect, useState } from "react";
+import request from "graphql-request";
+import { queryMyProjectsSections } from "./query";
+import { ProjectsSection } from "./types";
 type MyProjectsProps = {
   id: string;
 }
 export function MyProjects({id} : MyProjectsProps) {
+
+  const [projects, setProjects] = useState<ProjectsSection>();
+  useEffect(() => {
+    const fetchProjectsData = async () => {
+      const data = await request<ProjectsSection>(
+        process.env.REACT_APP_API_GRAPHQL_URL ?? '',
+        queryMyProjectsSections
+      );
+      
+      setProjects(data)
+    };
+    fetchProjectsData();
+  }, []);
+
+
   const PrevArrow = (props: any) => {
     const { onClick } = props;
 
@@ -45,6 +63,7 @@ export function MyProjects({id} : MyProjectsProps) {
     <MyProjectsContainer id={id}>
       <MyProjectsTitle >
         <FormattedMessage id="my_projects" />
+        
       </MyProjectsTitle>
       <CarroselAntd
         arrows={true}
@@ -53,25 +72,27 @@ export function MyProjects({id} : MyProjectsProps) {
         infinite
         speed={1000}
       >
-        {data.map((item) => (
-          <MyProjectItem>
+        {projects?.myProjectsSections.map((projectItem) => (
+          <MyProjectItem key={projectItem.projectName}>
             <MyProjectTitle>
-              <FormattedMessage id={item.title} />
+              <span>
+                <FormattedMessage id='project_title' /> {projectItem.projectName}
+              </span>
             </MyProjectTitle>
             <h1>
-              <FormattedMessage id="about" />
+              <FormattedMessage id="about" /> 
             </h1>
             <MyProjectContent>
               <MyProjectContentDescription>
-                <FormattedMessage id={item.about} />
+                <FormattedMessage id={projectItem.aboutProject} />
               </MyProjectContentDescription>
               <div className="contentLayout">
-                <MyProjectExternalButton target='_blank'  href={item.linkGithub}>
+                <MyProjectExternalButton target='_blank'  href={projectItem.githubLink}>
                   <FormattedMessage id="access_repository" />
                   <GithubOutlined />
                 </MyProjectExternalButton>
-                {item.linkPublicate && (
-                  <MyProjectExternalButton target='_blank' href={item.linkPublicate}>
+                {projectItem.publicateLink && (
+                  <MyProjectExternalButton target='_blank' href={projectItem.publicateLink}>
                     <FormattedMessage id="access_website" />
                     <IeOutlined />
                   </MyProjectExternalButton>
@@ -81,29 +102,26 @@ export function MyProjects({id} : MyProjectsProps) {
 
             <div className="contentLayout">
               <div>
-                {item.demonstration && (
-                  <img src={item.demonstration} alt={item.title} />
+                {projectItem.demonstrationGif && (
+                  <img src={projectItem.demonstrationGif } alt={projectItem.projectName} />
                 )}
               </div>
-              <MyProjectTechnologies>
-                <h1>
-                  <FormattedMessage id="libraries_used" />{" "}
-                </h1>
-                
-                {item.technologies.map((techItem, index) => (
-                  <Tag
-                    style={{ margin: "5px 10px" }}
-                    color={index % 2 ? "green" : "cyan"}
-                  >
-                    {techItem}
-                  </Tag>
+              
+              <MyProjectTechnologies >
+              {projectItem.technologies.map((tech) => (
+                  <MyProjectTechnologiesItem  key={tech.name}
+                   >
+                        <img  src={tech.imageUrl} alt={tech.name} />
+                        <span>{tech.name}</span>
+                  </MyProjectTechnologiesItem>
                 ))}
                 
-                <div className="errorMessage" >
-                 {item.info && <FormattedMessage id="attention_info" />} 
-                </div>
               </MyProjectTechnologies>
+             
             </div>
+            <div className="errorMessage" >
+                    {projectItem.info && <FormattedMessage id="attention_info" />} 
+              </div>
           </MyProjectItem>
         ))}
       </CarroselAntd>

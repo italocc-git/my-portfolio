@@ -1,10 +1,14 @@
-export interface MyProjectsListProps {
-        title: string;
-        about: string;
-        technologies: string[];
-        demonstration?: string;
-        linkGithub: string;
-        linkPublicate?: string;
-        info?: string;
-
+export interface ProjectsSection {
+       myProjectsSections: {
+        projectName: string;
+        aboutProject: string;
+        demonstrationGif?: string;
+        githubLink : string;
+        publicateLink?: string;
+        info ?: string;
+        technologies: {
+                name: string;
+                imageUrl: string;
+        }[]
+       }[]
 }

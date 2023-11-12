@@ -40,7 +40,11 @@ export default createGlobalStyle`
   button,
   input {
     font-family: 'Roboto Slab', serif;
-    font-size : 16px;
+    font-size : 1rem;
+  }
+  span{
+    font-family: 'Roboto Slab', serif;
+    font-size : 1rem;
   }
   h1,h2,h3,h4,h5,h6, strong, p {
     font-weight : 500;
