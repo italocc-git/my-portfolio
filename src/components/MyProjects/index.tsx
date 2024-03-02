@@ -1,11 +1,12 @@
 import {
   MyProjectsContainer,
-  MyProjectsTitle,
+  MyProjectsSectionTitle,
   CarroselAntd,
   CarrouselArrow,
   MyProjectItem,
   MyProjectTitle,
   MyProjectContent,
+  MyProjectContentLayout,
   MyProjectContentDescription,
   MyProjectExternalButton,
   MyProjectTechnologies,
@@ -17,6 +18,7 @@ import {
   LeftCircleOutlined,
   RightCircleOutlined,
 } from "@ant-design/icons";
+import {Grid} from 'antd'
 import { FormattedMessage } from "react-intl";
 import { useEffect, useState } from "react";
 import request from "graphql-request";
@@ -28,6 +30,10 @@ type MyProjectsProps = {
 export function MyProjects({id} : MyProjectsProps) {
 
   const [projects, setProjects] = useState<ProjectsSection>();
+  const {useBreakpoint} = Grid
+  const {lg} = useBreakpoint()
+  const isDesktop = lg
+  const isMobile = !lg
   useEffect(() => {
     const fetchProjectsData = async () => {
       const data = await request<ProjectsSection>(
@@ -36,6 +42,7 @@ export function MyProjects({id} : MyProjectsProps) {
       );
       
       setProjects(data)
+
     };
     fetchProjectsData();
   }, []);
@@ -45,7 +52,7 @@ export function MyProjects({id} : MyProjectsProps) {
     const { onClick } = props;
 
     return (
-      <CarrouselArrow left="20px">
+      <CarrouselArrow left="1rem">
         <LeftCircleOutlined onClick={onClick} />
       </CarrouselArrow>
     );
@@ -53,7 +60,7 @@ export function MyProjects({id} : MyProjectsProps) {
   const NextArrow = (props: any) => {
     const { onClick } = props;
     return (
-      <CarrouselArrow right="20px">
+      <CarrouselArrow right="1rem">
         <RightCircleOutlined onClick={onClick} />
       </CarrouselArrow>
     );
@@ -61,32 +68,28 @@ export function MyProjects({id} : MyProjectsProps) {
 
   return (
     <MyProjectsContainer id={id}>
-      <MyProjectsTitle >
+      <MyProjectsSectionTitle >
         <FormattedMessage id="my_projects" />
         
-      </MyProjectsTitle>
+      </MyProjectsSectionTitle>
       <CarroselAntd
-        arrows={true}
+        arrows={isDesktop}
         prevArrow={<PrevArrow />}
         nextArrow={<NextArrow />}
-        infinite
         speed={1000}
+        autoplay={isMobile}
+        dots={isDesktop}
       >
         {projects?.myProjectsSections.map((projectItem) => (
           <MyProjectItem key={projectItem.projectName}>
             <MyProjectTitle>
-              <span>
                 <FormattedMessage id='project_title' /> {projectItem.projectName}
-              </span>
             </MyProjectTitle>
-            <h1>
-              <FormattedMessage id="about" /> 
-            </h1>
             <MyProjectContent>
               <MyProjectContentDescription>
                 <FormattedMessage id={projectItem.aboutProject} />
               </MyProjectContentDescription>
-              <div className="contentLayout">
+              <MyProjectContentLayout>
                 <MyProjectExternalButton target='_blank'  href={projectItem.githubLink}>
                   <FormattedMessage id="access_repository" />
                   <GithubOutlined />
@@ -97,10 +100,10 @@ export function MyProjects({id} : MyProjectsProps) {
                     <IeOutlined />
                   </MyProjectExternalButton>
                 )}
-              </div>
+              </MyProjectContentLayout>
             </MyProjectContent>
 
-            <div className="contentLayout">
+            <MyProjectContentLayout>
               <div>
                 {projectItem.demonstrationGif && (
                   <img src={projectItem.demonstrationGif } alt={projectItem.projectName} />
@@ -118,7 +121,7 @@ export function MyProjects({id} : MyProjectsProps) {
                 
               </MyProjectTechnologies>
              
-            </div>
+            </MyProjectContentLayout>
             <div className="errorMessage" >
                     {projectItem.info && <FormattedMessage id="attention_info" />} 
               </div>

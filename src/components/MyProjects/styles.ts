@@ -9,18 +9,22 @@ type ArrowType = {
 export const MyProjectsContainer = styled.div`
     box-shadow: rgba(250, 250, 250, 0.1) 0px 10px 15px;
     box-sizing: content-box;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap:1.5rem;
 
 `
-export const MyProjectsTitle = styled.h1`
+export const MyProjectsSectionTitle = styled.h1`
     text-align: center;
         font-size:3rem;
         color:#fff;
         padding: 3rem 0;
+
+        @media(max-width: 640px) {
+            font-size: 2rem;
+            padding: 1rem 1rem;
+        }
 `
 export const CarroselAntd = styled(Carousel)`
     padding: 0 50px; 
@@ -40,6 +44,9 @@ export const CarrouselArrow = styled.div<ArrowType>`
     &:hover{
         color:#1890ff
     }
+    svg {
+        font-size: 2rem;
+    }
 
 `
 
@@ -55,23 +62,11 @@ export const MyProjectItem = styled.div`
             font-weight:600;
             color:#FFF;
         }
-    .contentLayout {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        gap:1.5rem;
-
-        @media(max-width: 1070px){
-            & {
-                flex-direction: column;
-            }
-        }
-    }
     img{
         height: 390px;
         margin-bottom:1rem;
 
-        @media(max-width: 1070px){
+        @media(max-width: 840px){
             & {
                 max-height: 205px;
             }
@@ -96,9 +91,19 @@ export const MyProjectTitle = styled.h1`
         font-size:2rem;
         font-weight:600;
 
-        @media(max-width: 840px){
+`
+
+export const MyProjectContent = styled.div`   
+            display: flex ;
+            justify-content: space-between;
+            margin: 1.5rem 0;
+            padding: 10px 10px;
+
+            @media(max-width: 1270px){
             & {
-                font-size:1rem;
+                flex-direction : column;
+                align-items: center;
+                gap:1rem;
             }
         }
 `
@@ -108,6 +113,20 @@ export const MyProjectContentDescription = styled.p`
     color: #fff;
     max-width: 50vw;
     text-align: justify;
+`
+
+export const MyProjectContentLayout = styled.div`
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap:1.5rem;
+
+        @media(max-width: 1500px){
+            & {
+                flex-direction: column;
+            }
+        }
 `
 
 export const MyProjectExternalButton = styled.a`
@@ -125,18 +144,6 @@ export const MyProjectExternalButton = styled.a`
             }
 `
 
-export const MyProjectContent = styled.div`   
-            display: flex ;
-            justify-content: space-between;
-            padding: 10px 10px;
-
-            @media(max-width: 1270px){
-            & {
-                flex-direction : column;
-                align-items: center;
-            }
-        }
-`
 
 export const MyProjectTechnologies = styled.div`
     display: grid;
